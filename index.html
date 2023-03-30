@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Calculator</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calcu-body">
+
+            <div class="calcu-screen">
+                <div class="calcu-input">
+                    <input type="number" id="num1"  class="inputtype">
+                    <input type="number" id="num2" class="inputtype">
+                    
+                    
+
+                </div>
+                <div class="calcu-result">
+                    <h3 id="displayAns"></h3>
+                </div>
+            </div>
+            
+            <div class="calcu-key">
+                <button onclick="convertVoltage()">Convert to Voltage</button>
+                <button onclick="convertWatts()">Convert to Watts</button>
+                <button onclick="convertAmpere()">Convert to Ampere</button>
+            </div>
+            
+        </div>
+        <div class="formula">
+            <img src="assets/image/watts-to-amps.png">
+        </div>
+    </div>
+
+
+
+    <script src="assets/script.js/script.js"></script>
+</body>
+</html>
