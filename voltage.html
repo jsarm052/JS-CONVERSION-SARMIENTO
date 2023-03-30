@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS AWESOME -->
+    <script src="https://kit.fontawesome.com/0e205b39a4.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Power Conversion</title>
+    
+</head>
+<body>
+    <section>
+        <div class="containerbody">
+            <div class="textcontainer">
+                <a href="index.html"><h3>Power Conversion</h3></a>
+                <span>Choose what to convert:</span>
+                <div class="dropdown">
+                    <button class="dropbtn">Select</button>
+                    <div class="dropdown-content">
+                    <a href="voltage.html">Voltage</a>
+                    <a href="wattage.html">Wattage</a>
+                    <a href="ampere.html">Ampere</a>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="container-right">
+                <div class="results-container">
+                    <h3 id="displayAns">
+                        <i class="fa-sharp fa-solid fa-bolt fa-fade fa-xl" style="color: #f8fc03;"></i>
+                    </h3>
+                </div>
+
+                <div class="inputcontainer">
+                    <div class="calcu-key">
+                        <label for="watts" >Watts:</label>
+                        <input class="inputTypes" type="number" for="watts" id="num1" name="watts">
+                        <label for="amps">Amps:</label>
+                        <input class="inputTypes" type="number" for="amps" id="num2" name="ampere">
+                    </div>
+                    <div class="buttons">
+                        <button onclick="convertVoltage()">Calculate</button>
+                        <button onclick="masterReset()" class="resetbutton">Reset</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+<script src="assets/script.js/script.js"></script>
+</body>
+</html>

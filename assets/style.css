@@ -1,77 +1,179 @@
-.container {
-    display:flex;
-    justify-content:center;
-    padding: 25px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Quicksand:wght@300&family=Sen&display=swap');
 
-.calcu-body {
-    border: 1px solid black;
-    border-radius: 20px;
-    height: 300px; 
-    width: 310px;
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Sen', sans-serif; */
+
+body ,button, section{ 
+    font-family: 'Sen', sans-serif;
+}
+section {
     display:flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(8, 8, 8, 0.678);
-   
+    
+    padding: 60px
 }
 
-.calcu-screen {
-    border-radius: 5px;
+
+
+.containerbody {
+    display:flex;
+    flex-direction: row;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    border-radius: 10px;
+    height: 300px;
+    width: 450px;
+    box-shadow:
+    5.3px 7.2px 1.4px -5px rgba(0, 0, 0, 0.014),
+    9.1px 12.5px 3.2px -5px rgba(0, 0, 0, 0.022),
+    12.5px 17.2px 5.5px -5px rgba(0, 0, 0, 0.028),
+    15.9px 21.8px 8.7px -5px rgba(0, 0, 0, 0.033),
+    19.3px 26.4px 13.9px -5px rgba(0, 0, 0, 0.04),
+    22.9px 31.3px 23.1px -5px rgba(0, 0, 0, 0.049),
+    27px 37px 47px -5px rgba(0, 0, 0, 0.06);
+}
+
+.dropbtn {
+    background-color: #1673ff;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
     
-    height: 150px; 
-    width: 390px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 35px;
+    width: 80px
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: rgb(0, 0, 199);
+  }
+
+
+
+
+.textcontainer {
+    font-family: 'Sen', sans-serif;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 15px;
+    row-gap: 10px;
+    width:40%
+    
+}
+.textcontainer h3 {
+    margin-bottom: 0;
+    
+    color: black;
+}
+.textcontainer a {
+    text-decoration: none;
+}
+
+.container-right {
+    padding: 10px 5px 5px 10px;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 250px
     
-
 }
-.calcu-input {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    
-
-}
-
-.inputtype {
-    width: 135px;
-    height: 40px;
-    border-radius: 10px;
-}
-
-.calcu-result {
-    position:relative;
-    left: 20px;
-    color:white
-}
-
-.results {
-    width: 135px;
-    height: 30px;
+.results-container {
+    padding: 30px 0px 0px 10px;
 }
 
 .calcu-key {
-    
-    
-    height: 100px; 
-    width: 290px;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
+    
+    
     
 }
-button {
-    background-color: rgba(18, 18, 233, 0.678);
+
+.inputcontainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 10px;
+    top: 40px;
+    padding: 0px 14px 0px 0px;
+    
+    
+}
+
+.calcu-key input {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    width: 130px;
+    
+}
+.buttons {
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 5px ;
+    gap:5px
+    
+}
+
+.buttons button {
+    height: 40px;
+    width: 90px;
+    background-color: #1673ff;
     color: white;
-    border-radius: 10px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    
 }
 
-.formula img{
-    height: 190px;
-    width: 260px
+.buttons button:hover {
+    background-color: rgb(0, 0, 199);
+  }
 
+
+.buttons .resetbutton {
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.212);
 }
 
+.buttons .resetbutton:hover {
+    background-color: gray;
+}
+
+.inputTypes::-webkit-outer-spin-button, .inputTypes::-webkit-inner-spin-button {
+    appearance: none;
+}
